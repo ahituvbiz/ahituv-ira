@@ -1080,50 +1080,65 @@ function toggleFaq(btn) {
 </script>
 <!-- Unified site footer -->
 <footer class="site-footer" role="contentinfo">
+<style>
+.site-footer{background:#1A1A1A;color:#C9CDD3;padding:64px 0 24px;font-size:15px;direction:rtl;text-align:right;margin-top:0;}
+.site-footer .sf-inner{max-width:1160px;margin:0 auto;padding:0 24px;}
+.site-footer .sf-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.site-footer .sf-grid h4{color:#fff;font-size:15px;font-weight:700;margin:0 0 12px;text-transform:uppercase;letter-spacing:1px;}
+.site-footer .sf-grid ul{list-style:none;padding:0;margin:0;}
+.site-footer .sf-grid li{margin-bottom:8px;}
+.site-footer .sf-grid a{color:#C9CDD3;text-decoration:none;transition:color .15s;}
+.site-footer .sf-grid a:hover{color:#fff;}
+.site-footer .sf-brand p{color:#9097A0;font-size:14px;line-height:1.6;margin-top:14px;max-width:340px;}
+.site-footer .logo-footer{display:inline-flex;flex-direction:column;align-items:stretch;width:max-content;text-decoration:none!important;line-height:1;}
+.site-footer .logo-footer .logo-name{font-family:'Frank Ruhl Libre',Georgia,serif;font-size:44px;font-weight:700;color:#fff;line-height:1;text-align:right;}
+.site-footer .logo-footer .logo-divider{width:43%;align-self:flex-end;height:4px;background:#D74E3C;border-radius:1px;margin-top:2px;margin-bottom:6px;}
+.site-footer .logo-footer .logo-tag,.site-footer .logo-footer .logo-tag-obj{display:flex;justify-content:space-between;align-items:baseline;font-family:'Heebo',sans-serif;font-size:11.5px;font-weight:600;line-height:1.3;}
+.site-footer .logo-footer .logo-tag{color:#fff;}
+.site-footer .logo-footer .logo-tag-obj{color:#FF9F8C;margin-top:2px;}
+.site-footer .sf-bottom{border-top:1px solid #2A2D33;padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:#6E747D;flex-wrap:wrap;gap:12px;}
+.site-footer .license-badge{display:inline-flex;align-items:center;gap:6px;background:#2A2D33;padding:6px 12px;border-radius:6px;color:#C9CDD3;}
+.site-footer .license-badge a{color:#C9CDD3;text-decoration:none;}
+@media(max-width:900px){.site-footer .sf-grid{grid-template-columns:1fr 1fr;gap:24px;}}
+@media(max-width:560px){.site-footer .sf-grid{grid-template-columns:1fr;}.site-footer .logo-footer .logo-name{font-size:38px;}}
+</style>
   <div class="sf-inner">
     <div class="sf-grid">
       <div class="sf-brand">
-        <a href="/investment/ira/" class="logo-footer" aria-label="אחיטוב — תכנון פיננסי אובייקטיבי">
-          <div class="logo-name">אחיטוב</div>
-          <div class="logo-divider"></div>
-          <div class="logo-tag"><span>ת</span><span>כ</span><span>נ</span><span>ו</span><span>ן</span><span>&nbsp;</span><span>פ</span><span>י</span><span>נ</span><span>נ</span><span>ס</span><span>י</span></div>
-          <div class="logo-tag-obj"><span>א</span><span>ו</span><span>ב</span><span>י</span><span>י</span><span>ק</span><span>ט</span><span>י</span><span>ב</span><span>י</span></div>
+        <a href="/investment/ira/" class="logo-footer">
+          <span class="logo-name">אחיטוב</span>
+          <span class="logo-divider"></span>
+          <span class="logo-tag"><span>תכנון פיננסי</span><span>·</span><span>יועץ פנסיוני</span></span>
+          <span class="logo-tag-obj"><span>אובייקטיבי</span><span>לפי חוק</span></span>
         </a>
-        <p>איתן אחיטוב — יועץ פנסיוני בעל רישיון משרד האוצר. אסור לי לקבל עמלות מחברות הביטוח או הקרנות — ההכנסה היחידה היא שכר טרחה ישיר ושקוף מהלקוח.</p>
+        <p>אסור לי לקבל עמלות מחברות הביטוח או הקרנות. ההכנסה היחידה שלי היא מהלקוח ישירות.</p>
       </div>
       <div>
-        <h4>מוצרי השקעה</h4>
+        <h4>מדריכי IRA</h4>
         <ul>
-          <li><a href="/investment/ira/">דף שירות IRA</a></li>
-          <li><a href="/investment/why-not-sp500/">למה לא רק S&amp;P 500</a></li>
-          <li>קרן כספית</li>
-          <li>חיסכון לכל ילד</li>
+          <li><a href="/investment/ira/">IRA — מה זה ולמי מתאים</a></li>
+          <li><a href="/investment/ira-explained/">מתי כן ומתי לא</a></li>
+          <li><a href="/investment/ira-fees/">עמלות ברוקרים — השוואה</a></li>
+          <li><a href="/investment/ira-investment-rules/">כללי השקעה רגולטוריים</a></li>
+          <li><a href="/investment/why-not-sp500/">למה לא רק S&P 500</a></li>
+          <li><a href="/investment/ai-loop-economy/">כלכלת הלולאה של ה-AI</a></li>
         </ul>
       </div>
       <div>
-        <h4>כדאי לדעת</h4>
+        <h4>קישורים</h4>
         <ul>
-          <li>קרן השתלמות</li>
-          <li>הרצאות מומלצות</li>
-          <li>רישיון יועץ פנסיוני</li>
-          <li>יועץ מול סוכן מול מתכנן</li>
-        </ul>
-      </div>
-      <div>
-        <h4>אודות</h4>
-        <ul>
+          <li><a href="https://www.pensya.info/bedikat-pensya/">🤖 רובייקטיבי — בדיקת פנסיה</a></li>
           <li><a href="https://www.pensya.info/about/">אודות איתן אחיטוב</a></li>
-          <li>יצירת קשר</li>
-          <li><a href="https://wa.me/972527700599">וואטסאפ: 052-770-0599</a></li>
-          <li><a href="https://www.pensya.info/clients/">אזור הלקוחות 🔒</a></li>
+          <li><a href="https://www.pensya.info/clients/">אזור לקוחות 🔒</a></li>
         </ul>
       </div>
     </div>
     <div class="sf-bottom">
-      <span>© 2026 אחיטוב תכנון פיננסי. כל הזכויות שמורות.</span>
+      <span>© 2026 אחיטוב תכנון פיננסי בע"מ. כל הזכויות שמורות.</span>
       <span class="license-badge">
-        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 0L2 4v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V4l-8-4z"/></svg>
-        רישיון יועץ פנסיוני · משרד האוצר
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        רישיון יועץ פנסיוני — משרד האוצר
       </span>
     </div>
-    <div class="sf-disclaimer">המידע באתר זה הוא כללי בלבד ואינו
+  </div>
+</footer>
